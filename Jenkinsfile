@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'silverlogic/python3.8' } }
+  agent { sudo docker { image 'silverlogic/python3.8' } }
   stages {
     stage('build') {
       steps {
